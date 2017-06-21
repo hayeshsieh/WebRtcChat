@@ -12,9 +12,12 @@
 		844B43471EF1835F009E4EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844B43451EF1835F009E4EF3 /* Main.storyboard */; };
 		844B43491EF1835F009E4EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844B43481EF1835F009E4EF3 /* Assets.xcassets */; };
 		844B434C1EF1835F009E4EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844B434A1EF1835F009E4EF3 /* LaunchScreen.storyboard */; };
+		F2A196B0F14FE82E4171A051 /* Pods_WebRtcChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50DB763651546EDDDC4BD7A /* Pods_WebRtcChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38E7674A277239FE736AF109 /* Pods-WebRtcChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRtcChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebRtcChat/Pods-WebRtcChat.release.xcconfig"; sourceTree = "<group>"; };
+		4CDA2BD387CD9D653FB31185 /* Pods-WebRtcChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRtcChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebRtcChat/Pods-WebRtcChat.debug.xcconfig"; sourceTree = "<group>"; };
 		844B433E1EF1835F009E4EF3 /* WebRtcChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRtcChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B43411EF1835F009E4EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844B43431EF1835F009E4EF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		844B43481EF1835F009E4EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844B434B1EF1835F009E4EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844B434D1EF1835F009E4EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50DB763651546EDDDC4BD7A /* Pods_WebRtcChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebRtcChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A196B0F14FE82E4171A051 /* Pods_WebRtcChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				844B43401EF1835F009E4EF3 /* WebRtcChat */,
 				844B433F1EF1835F009E4EF3 /* Products */,
+				BF0F2226E7F2B3A1C0CDA8CE /* Pods */,
+				E63CBD378D1B45910A034375 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = WebRtcChat;
 			sourceTree = "<group>";
 		};
+		BF0F2226E7F2B3A1C0CDA8CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA2BD387CD9D653FB31185 /* Pods-WebRtcChat.debug.xcconfig */,
+				38E7674A277239FE736AF109 /* Pods-WebRtcChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E63CBD378D1B45910A034375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50DB763651546EDDDC4BD7A /* Pods_WebRtcChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844B43501EF1835F009E4EF3 /* Build configuration list for PBXNativeTarget "WebRtcChat" */;
 			buildPhases = (
+				16902B7EE31500D1AFA02DB2 /* [CP] Check Pods Manifest.lock */,
 				844B433A1EF1835F009E4EF3 /* Sources */,
 				844B433B1EF1835F009E4EF3 /* Frameworks */,
 				844B433C1EF1835F009E4EF3 /* Resources */,
+				FB22ECA5A546BBFF0C666F68 /* [CP] Embed Pods Frameworks */,
+				7B70D32384248B400D8EB541 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16902B7EE31500D1AFA02DB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B70D32384248B400D8EB541 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebRtcChat/Pods-WebRtcChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB22ECA5A546BBFF0C666F68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebRtcChat/Pods-WebRtcChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		844B433A1EF1835F009E4EF3 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		844B43511EF1835F009E4EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDA2BD387CD9D653FB31185 /* Pods-WebRtcChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H5NL24UH2H;
@@ -272,6 +348,7 @@
 		};
 		844B43521EF1835F009E4EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E7674A277239FE736AF109 /* Pods-WebRtcChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H5NL24UH2H;
